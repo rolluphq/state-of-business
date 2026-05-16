@@ -1,0 +1,13 @@
+# Rollup HoldCo — State of the Business
+# Crawling is intentionally allowed so search-engine bots can read the
+# per-page <meta name="robots" content="noindex, ..."> tag and honor it.
+# If we blocked crawling here, Google could still surface the URL as a
+# bare link (without a snippet) when it finds the URL via any backlink.
+# Allowing crawl + per-page noindex is the modern, correct combination
+# for "do not index" intent.
+
+User-agent: *
+Allow: /
+
+# Explicitly: no sitemap published.
+# Do not add a Sitemap: directive here.
